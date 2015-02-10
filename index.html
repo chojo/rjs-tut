@@ -1,0 +1,29 @@
+<!-- index.html -->
+<html>
+  <head>
+    <title>Hello React</title>
+    <script src="http://fb.me/react-0.12.2.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+  </head>
+  <body>
+    <div id="content">lorem ipsum dolor sit mate</div>
+    <script type="text/jsx">
+      // tutorial1.js
+      // React is all about modular, composable components. For our comment box example, we'll have the following component structure:
+var CommentBox = React.createClass({
+  render: function() {
+    return (
+      <div className="commentBox">
+        Hello, world! I am a CommentBox.
+      </div>
+    );
+  }
+});
+React.render(
+  <CommentBox />,
+  document.getElementById('content')
+);
+    </script>
+  </body>
+</html>
